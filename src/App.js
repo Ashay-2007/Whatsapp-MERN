@@ -5,13 +5,13 @@ import Sidebar from './Sidebar';
 function App() {
   return (
     <div className="app">
-      <h1>Hey Developers!! Let's build a whats-app clone</h1>
+      <div className="app__body">
+        {/* Sidebar */}
+        <Sidebar/>
 
-      {/* Sidebar */}
-      <Sidebar/>
-
-      {/* ChatComponent */}
-      <Chat/>
+        {/* ChatComponent */}
+        <Chat/>  
+      </div>
 
     </div>
   );
