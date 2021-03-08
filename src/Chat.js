@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Avatar, IconButton } from "@material-ui/core";
 import { AttachFile, InsertEmoticon, MoreVert, SearchOutlined } from "@material-ui/icons";
 import "./Chat.css";
+import MicIcon from "@material-ui/icons/Mic"
 
 function Chat() {
     return (
@@ -40,6 +41,21 @@ function Chat() {
                     <span className="chat__timestamp">{new Date().toUTCString()}</span>
                 </p>
 
+            </div>
+
+
+            <div className="chat__footer">
+                <InsertEmoticon />
+                <form>
+                <input
+                    type="text"
+                    placeholder="Type a message"
+                />
+                <button type="submit">
+                    Send a message
+                </button>
+                </form>
+                <MicIcon />
             </div>
         </div>
     )
