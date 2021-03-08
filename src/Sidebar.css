@@ -52,3 +52,10 @@
 	width: 90%;
 	outline-width: 0; /* Remove border on click */
 }
+
+.sidebar__chats {
+	margin-top: 0.5rem;
+	flex: 1;
+	background-color: white;
+	overflow-y: scroll;
+}
